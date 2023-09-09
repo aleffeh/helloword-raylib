@@ -11,5 +11,6 @@ int main() {
         game->draw(nullptr);
     }
 
+    free(game);
     return 0;
 }
