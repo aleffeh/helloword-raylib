@@ -1,16 +1,27 @@
-#include <iostream>
 #include "raylib.h"
-#include "Game.h"
 
 int main() {
-    auto game = new core::Game();
+
+    InitWindow(800, 600, "Hello World");
+    SetTargetFPS(60);
+
 
     while (!WindowShouldClose()) {
 
-        game->update(nullptr);
-        game->draw(nullptr);
+        //update
+
+
+        //draw
+
+        BeginDrawing();
+
+        ClearBackground(RAYWHITE);
+        DrawText("Hello World!", 350, 300, 20, LIGHTGRAY);
+        EndDrawing();
+
+
     }
 
-    free(game);
+    CloseWindow();
     return 0;
 }
